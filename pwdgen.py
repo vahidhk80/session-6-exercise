@@ -1,6 +1,10 @@
 import random
+import sys
 
 num_chars = 10
+if len(sys.argv)>1:
+    num_chars=int(sys.argv[1])
+
 password =""
 for index in range(num_chars):
     char_index = random.randint(0,25)
